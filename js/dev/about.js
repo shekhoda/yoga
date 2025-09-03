@@ -1,4 +1,4 @@
-import { d as dataMediaQueries, s as slideUp, a as slideDown } from "./app.min.js";
+import { d as dataMediaQueries, s as slideUp, c as slideDown } from "./app.min.js";
 function showMore() {
   const showMoreBlocks = document.querySelectorAll("[data-showmore]");
   let showMoreBlocksRegular;
