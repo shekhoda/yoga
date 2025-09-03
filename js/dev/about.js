@@ -39,7 +39,7 @@ function showMore() {
     const hiddenHeight = getHeight(showMoreBlock, showMoreContent);
     if (matchMedia.matches || !matchMedia) {
       if (hiddenHeight < getOriginalHeight(showMoreContent)) {
-        slideUp(showMoreContent, 0, showMoreBlock.classList.contains("--showmore-active") ? getOriginalHeight(showMoreContent) : hiddenHeight);
+        slideUp(showMoreContent, 0, showMoreBlock.classList.contains("showmore-active") ? getOriginalHeight(showMoreContent) : hiddenHeight);
         showMoreButton.hidden = false;
       } else {
         slideDown(showMoreContent, 0, hiddenHeight);
@@ -96,8 +96,8 @@ function showMore() {
         const showMoreSpeed = showMoreBlock.dataset.showmoreButton ? showMoreBlock.dataset.showmoreButton : "500";
         const hiddenHeight = getHeight(showMoreBlock, showMoreContent);
         if (!showMoreContent.classList.contains("--slide")) {
-          showMoreBlock.classList.contains("--showmore-active") ? slideUp(showMoreContent, showMoreSpeed, hiddenHeight) : slideDown(showMoreContent, showMoreSpeed, hiddenHeight);
-          showMoreBlock.classList.toggle("--showmore-active");
+          showMoreBlock.classList.contains("showmore-active") ? slideUp(showMoreContent, showMoreSpeed, hiddenHeight) : slideDown(showMoreContent, showMoreSpeed, hiddenHeight);
+          showMoreBlock.classList.toggle("showmore-active");
         }
       }
     } else if (targetType === "resize") {

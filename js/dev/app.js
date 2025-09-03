@@ -473,21 +473,21 @@ function headerScroll() {
     const scrollTop = window.scrollY;
     clearTimeout(timer);
     if (scrollTop >= startPoint) {
-      !header.classList.contains("--header-scroll") ? header.classList.add("--header-scroll") : null;
+      !header.classList.contains("header-scroll") ? header.classList.add("header-scroll") : null;
       if (headerShow) {
         if (scrollTop > scrollDirection) {
-          header.classList.contains("--header-show") ? header.classList.remove("--header-show") : null;
+          header.classList.contains("header-show") ? header.classList.remove("header-show") : null;
         } else {
-          !header.classList.contains("--header-show") ? header.classList.add("--header-show") : null;
+          !header.classList.contains("header-show") ? header.classList.add("header-show") : null;
         }
         timer = setTimeout(() => {
-          !header.classList.contains("--header-show") ? header.classList.add("--header-show") : null;
+          !header.classList.contains("header-show") ? header.classList.add("header-show") : null;
         }, headerShowTimer);
       }
     } else {
-      header.classList.contains("--header-scroll") ? header.classList.remove("--header-scroll") : null;
+      header.classList.contains("header-scroll") ? header.classList.remove("header-scroll") : null;
       if (headerShow) {
-        header.classList.contains("--header-show") ? header.classList.remove("--header-show") : null;
+        header.classList.contains("header-show") ? header.classList.remove("header-show") : null;
       }
     }
     scrollDirection = scrollTop <= 0 ? 0 : scrollTop;
