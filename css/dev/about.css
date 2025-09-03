@@ -17,10 +17,10 @@
 [data-showmore-button] span:last-child {
   display: none;
 }
-.--showmore-active [data-showmore-button] span {
+.showmore-active [data-showmore-button] span {
   display: none;
 }
-.--showmore-active [data-showmore-button] span:last-child {
+.showmore-active [data-showmore-button] span:last-child {
   display: inline-flex;
 }@font-face {
 	font-family: "lg";
