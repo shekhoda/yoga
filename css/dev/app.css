@@ -369,7 +369,7 @@ body {
   flex-direction: column;
 }
 .hero__img-left {
-  flex-basis: 1;
+  flex-basis: 50%;
 }
 .hero__img-left img {
   width: 100%;
