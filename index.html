@@ -5,8 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1756911825991"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1756911825991">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1756965960381"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1756965960381">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -44,11 +45,12 @@
 			<main class="page page--home">
 				<h1 class="visually-hidden">Valeria Dekusar's yoga and functional training services</h1>
 				<section class="hero">
+					<h2 class="visually-hidden">Main information</h2>
 					<div class="hero__body">
 						<div class="hero__pictures-left">
 							<div class="hero__img-left">
 								<picture>
-									<img width="400" height="540" alt="stones" src="./assets/img/hero/stones.webp">
+									<img width="400" alt="stones" src="./assets/img/hero/stones.webp">
 								</picture>
 							</div>
 							<div class="hero__img-left">
@@ -67,7 +69,7 @@
 							<div class="hero__text font-sub">
 								<p>with Valeria Dekusar</p>
 							</div>
-							<button class="hero__button button button--color" type="button">
+							<button class="hero__button button button--color" type="button" data-scrollto=".types">
 								<span>show more</span>
 								<svg width="14" height="18" aria-hidden="true">
 									<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-b"></use>
@@ -83,7 +85,7 @@
 					</div>
 				</section>
 				<section class="types padding-section">
-					<h2 class="types__h2 visually-hidden">Types of traning</h2>
+					<h2 class="visually-hidden">Types of traning</h2>
 					<div class="types__container">
 						<div class="types__title-block title-block title-block--indent">
 							<div class="title-block__title font-h2 font-h2--color">
@@ -108,7 +110,7 @@
 					</div>
 				</section>
 				<section class="stages">
-					<h2 class="stages__h2 visually-hidden">Stages of goal achievement</h2>
+					<h2 class="visually-hidden">Stages of goal achievement</h2>
 					<div class="stages__wrapper">
 						<div class="stages__image">
 							<picture>
@@ -253,6 +255,8 @@
 						</div>
 					</div>
 				</div>
+			</main>
+			<footer data-footer="">
 				<section id="location" class="location padding-section">
 					<div class="location__container">
 						<div class="location__title-block title-block">
@@ -367,61 +371,61 @@
 						</div>
 					</div>
 				</section>
-			</main>
-			<footer class="footer" data-footer="">
-				<div class="footer__container">
-					<div class="footer__wrapper">
-						<div class="footer__column">
-							<!-- Logo -->
-							<div class="footer__logo">
-								<svg width="60" height="40" aria-hidden="true">
-									<use xlink:href="./assets/img/spritemap.svg#sprite-logo"></use>
-								</svg>
+				<div class="footer">
+					<div class="footer__container">
+						<div class="footer__wrapper">
+							<div class="footer__column">
+								<!-- Logo -->
+								<div class="footer__logo">
+									<svg width="60" height="40" aria-hidden="true">
+										<use xlink:href="./assets/img/spritemap.svg#sprite-logo"></use>
+									</svg>
+								</div>
+								<div class="footer__copyright" data-dynamic=".footer__container, 1000, 1">© All rights reserved, Valeria Dekusar</div>
 							</div>
-							<div class="footer__copyright" data-dynamic=".footer__container, 1000, 1">© All rights reserved, Valeria Dekusar</div>
-						</div>
-						<div class="footer__column">
-							<nav class="footer__menu-body">
-								<ul class="footer__menu-list">
-									<li class="footer__menu-item">
-										<a class="footer__menu-link" href="about.html">about</a>
-									</li>
-									<li class="footer__menu-item">
-										<a class="footer__menu-link" href="/#price">services</a>
-									</li>
-									<li class="footer__menu-item">
-										<a class="footer__menu-link" href="#location">contacts</a>
-									</li>
-									<li class="footer__menu-item">
-										<a class="footer__menu-link" href="#">privacy policy and cookies</a>
-									</li>
-								</ul>
-							</nav>
-							<div class="footer__socials">
-								<a class="footer__social-link" href="https://t.me/valeriabliss" target="_blank">
-									<span>telegram</span>
-									<svg width="14" height="18" aria-hidden="true">
-										<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
-									</svg>
-								</a>
-								<a class="footer__social-link" href="https://api.whatsapp.com/send/?phone=41765726448" target="_blank">
-									<span>whatsapp</span>
-									<svg width="14" height="18" aria-hidden="true">
-										<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
-									</svg>
-								</a>
-								<a class="footer__social-link" href="https://www.instagram.com/astroyogivibes?igsh=dm5pb2xkMmk5ZmJk&utm_source=qr" target="_blank">
-									<span>instagram</span>
-									<svg width="14" height="18" aria-hidden="true">
-										<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
-									</svg>
-								</a>
-								<a class="footer__social-link" href="tel:+41765726448" target="_blank">
-									<span>phone</span>
-									<svg width="14" height="18" aria-hidden="true">
-										<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
-									</svg>
-								</a>
+							<div class="footer__column">
+								<nav class="footer__menu-body">
+									<ul class="footer__menu-list">
+										<li class="footer__menu-item">
+											<a class="footer__menu-link" href="about.html">about</a>
+										</li>
+										<li class="footer__menu-item">
+											<a class="footer__menu-link" href="/#price">services</a>
+										</li>
+										<li class="footer__menu-item">
+											<a class="footer__menu-link" href="#location">contacts</a>
+										</li>
+										<li class="footer__menu-item">
+											<a class="footer__menu-link" href="#">privacy policy and cookies</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="footer__socials">
+									<a class="footer__social-link" href="https://t.me/valeriabliss" target="_blank">
+										<span>telegram</span>
+										<svg width="14" height="18" aria-hidden="true">
+											<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
+										</svg>
+									</a>
+									<a class="footer__social-link" href="https://api.whatsapp.com/send/?phone=41765726448" target="_blank">
+										<span>whatsapp</span>
+										<svg width="14" height="18" aria-hidden="true">
+											<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
+										</svg>
+									</a>
+									<a class="footer__social-link" href="https://www.instagram.com/astroyogivibes?igsh=dm5pb2xkMmk5ZmJk&utm_source=qr" target="_blank">
+										<span>instagram</span>
+										<svg width="14" height="18" aria-hidden="true">
+											<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
+										</svg>
+									</a>
+									<a class="footer__social-link" href="tel:+41765726448" target="_blank">
+										<span>phone</span>
+										<svg width="14" height="18" aria-hidden="true">
+											<use xlink:href="./assets/img/spritemap.svg#sprite-arrow-tr"></use>
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
