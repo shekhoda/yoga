@@ -983,7 +983,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   padding: 0.625rem;
   flex-basis: 25%;
 }
-.gallery__item img {
+.gallery__link {
+  width: 100%;
+  height: 100%;
+}
+.gallery__link img {
   width: 100%;
   height: 100%;
   object-fit: cover;

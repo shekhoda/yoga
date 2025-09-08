@@ -5,18 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>About Page</title>
-		<script type="module" crossorigin="" src="./js/about.min.js?v=1756965960380"></script>
+		<script type="module" crossorigin="" src="./js/about.min.js?v=1757330779726"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1756965960380">
-		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1756965960380">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1757330779726">
+		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1757330779726">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header" data-header-scroll="">
+			<header class="header" data-header-scroll="" data-lp="">
 				<div class="header__container">
 					<div class="header__body">
 						<!-- Logo -->
-						<a class="header__logo" href="index.html" aria-label="home">
+						<a class="header__logo header__logo--link" href="index.html" aria-label="home">
 							<svg width="60" height="40" aria-hidden="true">
 								<use xlink:href="./assets/img/spritemap.svg#sprite-logo"></use>
 							</svg>
@@ -96,78 +96,100 @@
 				<section class="gallery">
 					<h2 class="visually-hidden">Gallery</h2>
 					<div class="gallery__container">
-						<div class="gallery__body swiper" data-showmore="items">
-							<div class="gallery__content swiper-wrapper" data-showmore-content="2" data-gallery="">
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-01.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-01-600.webp" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/gallery/pic-01-1200.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-01.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-02.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-02-600.webp" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/gallery/pic-02-1200.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-02.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-03.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-03-600.webp" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/gallery/pic-03-1200.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-03.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-04.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-04-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-04.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-05.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-05-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-05.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-06.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-06-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-06.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-07.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-07-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-07.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-08.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-08-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-08.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-09.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-09-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-09.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-10.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-10-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-10.webp">
-									</picture>
-								</a>
-								<a class="gallery__item swiper-slide" href="./assets/img/gallery/pic-11.webp">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-11-600.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/gallery/pic-11.webp">
-									</picture>
-								</a>
-							</div>
+						<div class="gallery__body" data-showmore="items">
+							<ul class="gallery__content" data-showmore-content="2" data-gallery="">
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-01.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-01-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/gallery/pic-01-1200.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-01.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-02.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-02-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/gallery/pic-02-1200.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-02.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-03.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-03-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/gallery/pic-03-1200.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-03.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-04.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-04-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-04.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-05.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-05-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-05.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-06.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-06-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-06.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-07.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-07-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-07.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-08.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-08-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-08.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-09.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-09-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-09.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-10.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-10-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-10.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="./assets/img/gallery/pic-11.webp">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/gallery/pic-11-600.webp" type="image/webp">
+											<img width="305" alt="Image" src="./assets/img/gallery/pic-11.webp">
+										</picture>
+									</a>
+								</li>
+							</ul>
 							<button class="block__more" hidden data-showmore-button="" type="button">
 								<span>show more</span>
 								<span>hide</span>
@@ -177,7 +199,7 @@
 					</div>
 				</section>
 			</main>
-			<footer data-footer="">
+			<footer>
 				<section id="location" class="location padding-section">
 					<div class="location__container">
 						<div class="location__title-block title-block">
@@ -297,7 +319,7 @@
 						<div class="footer__wrapper">
 							<div class="footer__column">
 								<!-- Logo -->
-								<a class="footer__logo" href="/" aria-label="home">
+								<a class="footer__logo footer__logo--link" href="/" aria-label="home">
 									<svg width="60" height="40" aria-hidden="true">
 										<use xlink:href="./assets/img/spritemap.svg#sprite-logo"></use>
 									</svg>
